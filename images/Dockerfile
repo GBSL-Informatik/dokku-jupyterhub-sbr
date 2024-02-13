@@ -1,7 +1,7 @@
 FROM jupyter/minimal-notebook:lab-4.0.2
 
 
-LABEL maintainer="hfr"
+LABEL maintainer="sbr"
 LABEL version="0.1.6"
 LABEL description="Jupyter Notebook image"
 

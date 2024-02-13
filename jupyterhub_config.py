@@ -5,8 +5,8 @@ import shutil
 from oauthenticator.my_azuread import MyAzureAdOAuthenticator
 from dockerspawner import DockerSpawner
 
-PREFIX = 'hfr'
-ADMINS = set(['balthasar-hofer--gbsl-ch'])
+PREFIX = 'sbr'
+ADMINS = set(['christian-schneeberger--gbsl-ch'])
 HOME_PATH = '/home/jovyan/work'
 APP_NAME = f'{PREFIX}-jupyterhub'
 APP_ROOT_HOST = f'/var/lib/dokku/data/storage/{APP_NAME}'
@@ -18,11 +18,11 @@ VOLUME_GROUPS = {
 }
 
 MEMBERSHIPS = {
-    'balthasar-hofer--gbsl-ch': set(['data-science'])
+    'christian-schneeberger--gbsl-ch': set(['data-science'])
 }
 
 PERFORMANCE_LIMITS = {
-    'balthasar-hofer--gbsl-ch': '8G'
+    'christian-schneeberger--gbsl-ch': '2G'
 }
 
 
