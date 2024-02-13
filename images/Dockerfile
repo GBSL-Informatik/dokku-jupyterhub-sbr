@@ -1,8 +1,8 @@
-FROM jupyter/minimal-notebook:lab-4.0.2
+FROM jupyter/minimal-notebook:lab-4.1.1
 
 
 LABEL maintainer="sbr"
-LABEL version="0.1.6"
+LABEL version="0.1.7"
 LABEL description="Jupyter Notebook image"
 
 USER root
@@ -12,29 +12,28 @@ USER jovyan
 
 # all additional pip packages
 RUN pip3 install --no-cache \
-    jupyterhub==4.0.1 \
-    jupyterlab==4.0.2 \
-    smartphone-connector==0.0.115 \
-    notebook==6.5.4 \
+    jupyterhub==4.0.2 \
+    jupyterlab==4.1.1 \
+    notebook==7.0.8 \
     playsound==1.2.2 \
-    numpy==1.25.0 \
+    numpy==1.26.4 \
     gTTs==2.2.2 \
-    Pillow==10.0.0 \
+    Pillow==10.2.0 \
     XlsxWriter==3.1.2 \
-    pandas==2.0.3 \
+    pandas==2.2.0 \
     xlrd==2.0.1 \
     openpyxl==3.1.2 \
-    ipywidgets==8.0.7 \
+    ipywidgets==8.1.2 \
     ipympl==0.9.3 \
-    jupyterlab-spellchecker==0.8.3 \
-    scipy==1.11.1 \
+    jupyterlab-spellchecker==0.8.4 \
+    scipy==1.12.0 \
     # lckr-jupyterlab-variableinspector==3.0.9 \
     # jupyterlab-lsp==4.2.0 \
-    'python-lsp-server[all]'==1.7.4 \
+    'python-lsp-server[all]'==1.10.0 \
     ipycanvas==0.13.1\
-    orjson==3.9.1\
+    orjson==3.9.13\
     graphviz==0.20\
-    termcolor==2.3.0
+    termcolor==2.4.0
 
 #   PGPLOT
 # RUN pip3 install --no- \
