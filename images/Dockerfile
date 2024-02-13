@@ -13,7 +13,6 @@ USER jovyan
 RUN pip3 install --no-cache \
     jupyterhub==4.0.2 \
     jupyterlab==4.1.1 \
-    notebook==7.0.8 \
     playsound==1.2.2 \
     numpy==1.26.4 \
     gTTs==2.2.2 \
