@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:lab-4.1.1
+FROM jupyter/minimal-notebook:lab-4.0.7
 
 LABEL maintainer="sbr"
 LABEL version="0.1.7"
